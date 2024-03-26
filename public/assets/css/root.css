@@ -1,11 +1,7 @@
 /* assets/scss/root.scss */
 @font-face {
-  font-family: "Conthrax";
-  src: url("/assets/Conthrax-sb-KQEDXDW3.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url("/assets/Montserrat-UIMPFJSE.ttf") format("truetype");
+  font-family: "Inter";
+  src: url("/assets/Inter-OOC6RWOT.ttf") format("truetype");
 }
 *,
 ::after,
@@ -32,11 +28,10 @@ body {
   padding: 0 !important;
   overflow: overlay;
   color: #ffffff;
-  background-image: url("/assets/back-YQYOSY33.jpg");
   background-position: center center;
   background-size: cover;
   width: 100%;
-  font-family: "Montserrat";
+  font-family: "Inter";
 }
 body::-webkit-scrollbar {
   width: 6px;

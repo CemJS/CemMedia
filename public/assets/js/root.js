@@ -953,10 +953,10 @@ Fn.log = async function(...params) {
 var cemjs_default = { version: "v1.0.0", port: 3e3, live: true };
 
 // config/pages.json
-var pages_default = [{ url: "/error", front: ["header", "error", "footer"] }, { url: "/", front: ["header", "home", "footer"] }];
+var pages_default = [{ url: "/", front: ["header", "cemMedia", "footer"] }, { url: "/error", front: ["header", "error", "footer"] }];
 
 // config/frontends.json
-var frontends_default = [{ front: true, name: "empty", path: { js: "/assets/js/empty.js?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "error", path: { js: "/assets/js/error.js?ver=1.0.0", css: "/assets/css/error.css?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "footer", path: { js: "/assets/js/footer.js?ver=1.0.0", css: "/assets/css/footer.css?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "header", path: { js: "/assets/js/header.js?ver=1.0.0", css: "/assets/css/header.css?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "home", path: { js: "/assets/js/home.js?ver=1.0.0", css: "/assets/css/home.css?ver=1.0.0" }, version: "1.0.0", visable: true }];
+var frontends_default = [{ front: true, name: "cemMedia", path: { js: "/assets/js/cemMedia.js?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "error", path: { js: "/assets/js/error.js?ver=1.0.0", css: "/assets/css/error.css?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "footer", path: { js: "/assets/js/footer.js?ver=1.0.0", css: "/assets/css/footer.css?ver=1.0.0" }, version: "1.0.0", visable: true }, { front: true, name: "header", path: { js: "/assets/js/header.js?ver=1.0.0", css: "/assets/css/header.css?ver=1.0.0" }, version: "1.0.0", visable: true }];
 
 // config/services.json
 var services_default = [{ service: true, name: "functions", path: { js: "/assets/js/_functions.js?ver=1.0.0" }, version: "1.0.0", visable: true }, { service: true, name: "preloader", path: { js: "/assets/js/_preloader.js?ver=1.0.0" }, version: "1.0.0", visable: true }];
