@@ -26,7 +26,12 @@ export default {
         "100%": "100%",
         "125%": "125%",
       },
+      fontSize: {
+        base: "clamp(1.75rem,2vw,2rem)",
+        little: "clamp(1rem,2vw,1.125rem)",
+      },
     },
   },
+  safelist: ["bg-orange-400"],
   plugins: [],
 };

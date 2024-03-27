@@ -271,9 +271,50 @@ Fn.log = async function(...params) {
   return;
 };
 
+// assets/images/logoFull.png
+var logoFull_default = "/assets/logoFull-ZCMIZVVL.png";
+
+// json/socialsFooter.json
+var socialsFooter_default = [
+  {
+    link: "",
+    img: "/contents/svg/socials/twitter.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/cem.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/inst.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/youtube.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/telegram.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/facebook.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/vk.svg"
+  },
+  {
+    link: "",
+    img: "/contents/svg/socials/yandex.svg"
+  }
+];
+
 // frontends/footer/display/Main.tsx
 function Main_default() {
-  return /* @__PURE__ */ Cemjsx("footer", null);
+  return /* @__PURE__ */ Cemjsx("footer", { class: "flex flex-col gap-3 bg-red-500 p-[31px_20px_136px] text-little leading-[19.3px] text-white" }, /* @__PURE__ */ Cemjsx("div", { class: "flex gap-[0.625rem] " }, /* @__PURE__ */ Cemjsx("p", null, "\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441 \u043D\u0430\u043C\u0438"), /* @__PURE__ */ Cemjsx("a", { href: "https://t.me/dmitriibelov" }, "@dmitriibelov")), /* @__PURE__ */ Cemjsx("p", null, "\u041D\u0430\u0448\u0438 \u0441\u043E\u0446\u0441\u0435\u0442\u0438"), /* @__PURE__ */ Cemjsx("div", { class: "flex gap-[6px]" }, socialsFooter_default.map((item) => {
+    return /* @__PURE__ */ Cemjsx("div", { class: "flex items-center justify-center rounded-[50%] border-[0.5px] border-solid border-white" }, /* @__PURE__ */ Cemjsx("img", { src: item.img, alt: "social" }));
+  })), /* @__PURE__ */ Cemjsx("a", { href: "" }, "info@cryptoemergency.com"), /* @__PURE__ */ Cemjsx("img", { class: "w-[73px]", src: logoFull_default, alt: "Crypto Emergency" }));
 }
 
 // frontends/footer/navigation.tsx
