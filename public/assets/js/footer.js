@@ -312,9 +312,16 @@ var socialsFooter_default = [
 
 // frontends/footer/display/Main.tsx
 function Main_default() {
-  return /* @__PURE__ */ Cemjsx("footer", { class: "flex flex-col gap-3 bg-red-500 p-[31px_20px_136px] text-little leading-[19.3px] text-white" }, /* @__PURE__ */ Cemjsx("div", { class: "flex gap-[0.625rem] " }, /* @__PURE__ */ Cemjsx("p", null, "\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441 \u043D\u0430\u043C\u0438"), /* @__PURE__ */ Cemjsx("a", { href: "https://t.me/dmitriibelov" }, "@dmitriibelov")), /* @__PURE__ */ Cemjsx("p", null, "\u041D\u0430\u0448\u0438 \u0441\u043E\u0446\u0441\u0435\u0442\u0438"), /* @__PURE__ */ Cemjsx("div", { class: "flex gap-[6px]" }, socialsFooter_default.map((item) => {
-    return /* @__PURE__ */ Cemjsx("div", { class: "flex items-center justify-center rounded-[50%] border-[0.5px] border-solid border-white" }, /* @__PURE__ */ Cemjsx("img", { src: item.img, alt: "social" }));
-  })), /* @__PURE__ */ Cemjsx("a", { href: "" }, "info@cryptoemergency.com"), /* @__PURE__ */ Cemjsx("img", { class: "w-[73px]", src: logoFull_default, alt: "Crypto Emergency" }));
+  return /* @__PURE__ */ Cemjsx("footer", { class: " bg-red-500 p-[31px_20px_136px] text-little leading-[19.3px] text-white" }, /* @__PURE__ */ Cemjsx("div", { class: "flex flex-col gap-3 xl:container xl:mx-auto" }, /* @__PURE__ */ Cemjsx("div", { class: "flex gap-[0.625rem] " }, /* @__PURE__ */ Cemjsx("p", null, "\u0421\u0432\u044F\u0437\u0430\u0442\u044C\u0441\u044F \u0441 \u043D\u0430\u043C\u0438"), /* @__PURE__ */ Cemjsx("a", { href: "https://t.me/dmitriibelov" }, "@dmitriibelov")), /* @__PURE__ */ Cemjsx("p", null, "\u041D\u0430\u0448\u0438 \u0441\u043E\u0446\u0441\u0435\u0442\u0438"), /* @__PURE__ */ Cemjsx("div", { class: "flex gap-[6px]" }, socialsFooter_default.map((item) => {
+    return /* @__PURE__ */ Cemjsx(
+      "a",
+      {
+        href: item.link,
+        class: "flex h-[25px] w-[25px] items-center justify-center rounded-[50%] border-[0.5px] border-solid border-white"
+      },
+      /* @__PURE__ */ Cemjsx("img", { src: item.img, alt: "social" })
+    );
+  })), /* @__PURE__ */ Cemjsx("a", { href: "" }, "info@cryptoemergency.com"), /* @__PURE__ */ Cemjsx("a", { href: "" }, /* @__PURE__ */ Cemjsx("img", { class: "w-[73px]", src: logoFull_default, alt: "Crypto Emergency" }))));
 }
 
 // frontends/footer/navigation.tsx

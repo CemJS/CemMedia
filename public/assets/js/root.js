@@ -950,7 +950,7 @@ Fn.log = async function(...params) {
 };
 
 // config/cemjs.json
-var cemjs_default = { version: "v1.0.1", port: 3e3, live: true };
+var cemjs_default = { version: "v1.0.2", port: 3e3, live: true };
 
 // config/pages.json
 var pages_default = [{ url: "/", front: ["header", "cemMedia", "footer"] }, { url: "/error", front: ["header", "error", "footer"] }];
