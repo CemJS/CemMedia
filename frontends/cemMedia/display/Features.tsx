@@ -10,11 +10,9 @@ export default function () {
         <p
           init={($el: any) => {
             const observer = new IntersectionObserver((entries) => {
-              Fn.log("=48be8e=", entries);
               entries.forEach(async (entry) => {
                 if (entry.isIntersecting) {
                   observer.unobserve($el);
-                  console.log("=cc53b7=", $el);
                   $el.classList.add("scale-[1.1]");
                   setTimeout(() => {
                     $el.classList.remove("scale-[1.1]");
@@ -40,11 +38,9 @@ export default function () {
         <p
           init={($el: any) => {
             const observer = new IntersectionObserver((entries) => {
-              Fn.log("=48be8e=", entries);
               entries.forEach(async (entry) => {
                 if (entry.isIntersecting) {
                   observer.unobserve($el);
-                  console.log("=cc53b7=", $el);
                   $el.classList.add("scale-[1.1]");
                   setTimeout(() => {
                     $el.classList.remove("scale-[1.1]");
@@ -71,11 +67,9 @@ export default function () {
         <p
           init={($el: any) => {
             const observer = new IntersectionObserver((entries) => {
-              Fn.log("=48be8e=", entries);
               entries.forEach(async (entry) => {
                 if (entry.isIntersecting) {
                   observer.unobserve($el);
-                  console.log("=cc53b7=", $el);
                   $el.classList.add("scale-[1.1]");
                   setTimeout(() => {
                     $el.classList.remove("scale-[1.1]");
@@ -100,11 +94,9 @@ export default function () {
         <p
           init={($el: any) => {
             const observer = new IntersectionObserver((entries) => {
-              Fn.log("=48be8e=", entries);
               entries.forEach(async (entry) => {
                 if (entry.isIntersecting) {
                   observer.unobserve($el);
-                  console.log("=cc53b7=", $el);
                   $el.classList.add("scale-[1.1]");
                   setTimeout(() => {
                     $el.classList.remove("scale-[1.1]");

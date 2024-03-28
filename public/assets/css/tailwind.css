@@ -999,6 +999,10 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1065,6 +1069,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-hidden {
@@ -1155,6 +1163,10 @@ video {
 .bg-zinc-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
+.fill-white {
+  fill: #fff;
 }
 
 .p-\[0\.825rem_3\.3875rem\] {
@@ -1359,6 +1371,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .\[border-radius\:60px_0_60px_0\] {
   border-radius: 60px 0 60px 0;
 }
@@ -1510,6 +1526,42 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:fill-black:hover {
+  fill: #000;
+}
+
+.hover\:fill-sky-500:hover {
+  fill: #0ea5e9;
+}
+
+.hover\:fill-\[linear-gradient\(45deg\2c \#f0943_0\%\2c \#e6683c_25\%\2c \#dc2743_50\%\2c \#cc2366_75\%\2c \#bc1888_100\%\)\]:hover {
+  fill: linear-gradient(45deg,#f0943 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+
+.hover\:fill-pink-600:hover {
+  fill: #db2777;
+}
+
+.hover\:fill-indigo-700:hover {
+  fill: #4338ca;
+}
+
+.hover\:fill-fuchsia-600:hover {
+  fill: #c026d3;
+}
+
+.hover\:fill-red-600:hover {
+  fill: #dc2626;
+}
+
+.hover\:fill-slate-500:hover {
+  fill: #64748b;
+}
+
+.hover\:fill-sky-400:hover {
+  fill: #38bdf8;
+}
+
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1546,6 +1598,10 @@ video {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.\[\&\:hover_img\]\:fill-sky-500:hover img {
+  fill: #0ea5e9;
 }
 
 .\[\&\:nth-child\(even\)_\#title\]\:self-end:nth-child(even) #title {
