@@ -31,8 +31,23 @@ export default function () {
               ) : null}
               <p
                 id="title"
+                init={($el: any) => {
+                  const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(async (entry) => {
+                      if (entry.isIntersecting) {
+                        observer.unobserve($el);
+                        console.log("=cc53b7=", $el);
+                        $el.classList.add("scale-[1.1]");
+                        setTimeout(() => {
+                          $el.classList.remove("scale-[1.1]");
+                        }, 1000);
+                      }
+                    });
+                  });
+                  observer.observe($el);
+                }}
                 class={[
-                  "text-little relative z-10 mb-[-21px] flex max-h-[73px] w-[242px] items-center justify-center p-[27px] text-center font-medium leading-[19px] text-white [border-radius:60px_0_60px_0]",
+                  "relative z-10 mb-[-21px] flex max-h-[73px] w-[242px] items-center justify-center p-[27px] text-center text-little font-medium leading-[19px] text-white [border-radius:60px_0_60px_0] [transition:all_0.5s_ease]",
                   `bg-${item.color}`,
                 ]}
               >
@@ -40,7 +55,7 @@ export default function () {
               </p>
               <div
                 html={item.text}
-                class="text-little relative z-[9] flex h-full flex-col gap-[10px] rounded-[22px] border-[0.5px] border-solid border-black bg-white p-[45px_25px] leading-[19.3px]"
+                class="relative z-[9] flex h-full flex-col gap-[10px] rounded-[22px] border-[0.5px] border-solid border-black bg-white p-[45px_25px] text-little leading-[19.3px]"
               ></div>
             </div>
           );

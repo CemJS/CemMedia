@@ -15,7 +15,11 @@ export default function () {
           <p class="z-10 text-[clamp(0.75rem,2vw,0.875rem)] font-normal text-white">
             Создано командой Crypto Emergency
           </p>
-          <img src={logo} alt="Создано командой Crypto Emergency" />
+          <img
+            class="z-10"
+            src={logo}
+            alt="Создано командой Crypto Emergency"
+          />
         </div>
         <div class="z-10 flex flex-col gap-[1.375rem]">
           <button class="self-start rounded-[1.375rem] bg-white p-[0.825rem_3.3875rem] text-[clamp(20px,2vw,22px)] font-semibold [border:0.0313rem_solid_black] [transition:all_0.3s_ease] hover:bg-black hover:text-white">

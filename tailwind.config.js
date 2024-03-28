@@ -32,6 +32,6 @@ export default {
       },
     },
   },
-  safelist: ["bg-orange-400"],
+  safelist: ["bg-orange-400", "scale-[1.1]"],
   plugins: [],
 };
